@@ -12,6 +12,10 @@
     "pitchClassSet": {
       "name": "Pitch-Class Set Calculator",
       "description": "Compute normal form, prime form, interval vector, Forte number, with inversion / retrograde / R-I transformations"
+    },
+    "twelveTone": {
+      "name": "Twelve-Tone Matrix",
+      "description": "Enter a prime row (P0) to generate the full 12x12 twelve-tone matrix with P/R/I/RI labels"
     }
   },
   "common": {
@@ -71,5 +75,19 @@
   "history": {
     "title": "History",
     "empty": "No history yet"
+  },
+  "twelveTone": {
+    "clickNotes": "Click notes in order",
+    "orTypeText": "or type 12 notes",
+    "textPlaceholder": "e.g. C C# D D# E F F# G G# A A# B",
+    "progress": "{{current}} / 12 notes",
+    "primeRow": "Prime Row P0",
+    "matrix": "Matrix",
+    "export": "Export",
+    "exportPNG": "Export as PNG",
+    "saveJSON": "Save as JSON",
+    "validation": {
+      "empty": "Enter a prime row to generate the matrix"
+    }
   }
 }

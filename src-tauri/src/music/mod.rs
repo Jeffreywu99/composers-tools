@@ -9,4 +9,4 @@ pub mod symmetry;
 pub mod classification;
 pub mod random;
 pub mod subsets;
-
+pub mod twelve_tone;

@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/nicedoc/open-tauri/main/.schemas/config.schema.json",
   "productName": "Composers Tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "identifier": "com.composers-tools.app",
   "build": {
     "frontendDist": "../dist",

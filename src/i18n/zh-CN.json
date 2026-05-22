@@ -12,6 +12,10 @@
     "pitchClassSet": {
       "name": "音级集合计算器",
       "description": "计算音级集合的标准序、原型、音程向量、福特号，支持倒影/逆行/逆行倒影等变体操作"
+    },
+    "twelveTone": {
+      "name": "十二音矩阵",
+      "description": "输入十二音序列原型（P0），生成完整的12x12十二音矩阵，含P/R/I/RI标记"
     }
   },
   "common": {
@@ -71,5 +75,19 @@
   "history": {
     "title": "历史记录",
     "empty": "暂无历史记录"
+  },
+  "twelveTone": {
+    "clickNotes": "按顺序点击音符",
+    "orTypeText": "或输入12个音符",
+    "textPlaceholder": "例如：C C# D D# E F F# G G# A A# B",
+    "progress": "{{current}} / 12 个音符",
+    "primeRow": "原型序列 P0",
+    "matrix": "矩阵",
+    "export": "导出",
+    "exportPNG": "导出为 PNG",
+    "saveJSON": "保存为 JSON",
+    "validation": {
+      "empty": "输入原型序列以生成矩阵"
+    }
   }
 }

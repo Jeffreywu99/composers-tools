@@ -38,6 +38,15 @@ export interface RandomConstraints {
   requireISymmetry?: boolean;
 }
 
+export interface TwelveToneMatrixResult {
+  primeRow: PitchClass[];
+  primeRowNames: string[];
+  matrix: PitchClass[][];
+  matrixNames: string[][];
+  rowLabels: string[];
+  colLabels: string[];
+}
+
 export interface ForteTableEntry {
   forteNumber: string;
   cardinality: number;
