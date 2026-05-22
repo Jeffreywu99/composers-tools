@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { PanelLeftClose, PanelLeft, Music, Grid3X3, type LucideIcon } from "lucide-react";
+import { PanelLeftClose, PanelLeft, Music, type LucideIcon } from "lucide-react";
 import { useToolRegistry } from "../../stores/toolRegistry";
 
 const iconMap: Record<string, LucideIcon> = {
   music: Music,
-  matrix: Grid3X3,
 };
 
 export function Sidebar() {

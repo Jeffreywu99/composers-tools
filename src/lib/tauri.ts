@@ -2,7 +2,6 @@ import type {
   ClassificationResult,
   TransformResult,
   RandomConstraints,
-  TwelveToneMatrixResult,
   ForteTableEntry,
 } from "../types/music";
 
@@ -60,23 +59,4 @@ export async function getForteTable(): Promise<ForteTableEntry[]> {
   const tauri = getTauri();
   if (!tauri) throw new Error("Tauri not available");
   return tauri.core.invoke("get_forte_table") as Promise<ForteTableEntry[]>;
-}
-
-export async function computeTwelveToneMatrix(
-  primeRow: number[]
-): Promise<TwelveToneMatrixResult> {
-  const tauri = getTauri();
-  if (!tauri) throw new Error("Tauri not available");
-  return tauri.core.invoke("compute_twelve_tone_matrix", {
-    primeRow,
-  }) as Promise<TwelveToneMatrixResult>;
-}
-
-export async function writeFile(
-  path: string,
-  contents: number[]
-): Promise<void> {
-  const tauri = getTauri();
-  if (!tauri) throw new Error("Tauri not available");
-  return tauri.core.invoke("write_file", { path, contents }) as Promise<void>;
 }

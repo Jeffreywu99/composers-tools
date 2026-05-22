@@ -6,7 +6,6 @@ import type { Tool } from "./types/tool";
 
 // Side-effect imports: register all tools
 import "./components/tools/pitch-class-set";
-import "./components/tools/twelve-tone";
 
 export default function App() {
   const { i18n } = useTranslation();
