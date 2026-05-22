@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbf7f0;
+  --color-surface: #fffcf7;
+  --color-parchment: #f2ebe0;
+  --color-accent: #c0854a;
+  --color-accent-deep: #a06830;
+  --color-ink: #2c1810;
+  --color-ink-muted: #8b6f5c;
+  --color-divider: #e5d5c0;
+  --color-success: #7a8b5e;
+  --color-danger: #c46a5a;
+  --color-accent-glow: rgba(192, 133, 74, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family:
+    "PingFang SC",
+    "Microsoft YaHei",
+    "Hiragino Sans GB",
+    "Noto Sans SC",
+    "Noto Serif SC",
+    "Source Serif 4",
+    Georgia,
+    serif;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.015em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle paper texture overlay on body */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+::selection {
+  background-color: rgba(192, 133, 74, 0.2);
+  color: var(--color-ink);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-divider);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-divider);
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(192, 133, 74, 0.3);
+  transition: transform 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  accent-color: var(--color-accent);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* Text input */
+input[type="text"] {
+  font-family: inherit;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input[type="text"]:focus {
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 0 0 3px var(--color-accent-glow) !important;
+}

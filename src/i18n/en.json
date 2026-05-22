@@ -1,0 +1,93 @@
+{
+  "app": {
+    "title": "Composition Tools",
+    "subtitle": "Composition Assistance Toolkit"
+  },
+  "sidebar": {
+    "tools": "Tools",
+    "collapse": "Collapse Sidebar",
+    "expand": "Expand Sidebar"
+  },
+  "tool": {
+    "pitchClassSet": {
+      "name": "Pitch-Class Set Calculator",
+      "description": "Compute normal form, prime form, interval vector, Forte number, with inversion / retrograde / R-I transformations"
+    },
+    "twelveTone": {
+      "name": "Twelve-Tone Matrix",
+      "description": "Enter a prime row (P0) to generate the full 12x12 twelve-tone matrix with P/R/I/RI labels"
+    }
+  },
+  "common": {
+    "clear": "Clear",
+    "undo": "Undo",
+    "generate": "Generate",
+    "apply": "Apply",
+    "copy": "Copy",
+    "ordered": "Ordered",
+    "unordered": "Unordered",
+    "notes": "Notes",
+    "numbers": "Numbers"
+  },
+  "noteInput": {
+    "clickButtons": "Click note buttons",
+    "orTypeText": "or type text",
+    "textPlaceholder": "e.g. C E G or 0 4 7",
+    "orderedToggle": "Ordered sequence"
+  },
+  "transformation": {
+    "title": "Transformations",
+    "type": "Transform type",
+    "nValue": "n value",
+    "Tn": "Transposition Tn",
+    "In": "Inversion In",
+    "R": "Retrograde R",
+    "RI": "R-I",
+    "result": "Result"
+  },
+  "classification": {
+    "title": "Set Classification",
+    "normalForm": "Normal Form",
+    "primeForm": "Prime Form",
+    "intervalVector": "Interval Vector",
+    "forteNumber": "Forte Number",
+    "chroma": "Chroma"
+  },
+  "properties": {
+    "title": "Set Properties",
+    "cardinality": "Cardinality",
+    "symmetry": "Symmetry",
+    "tSymmetric": "T-symmetric",
+    "iSymmetric": "I-symmetric",
+    "notSymmetric": "None",
+    "subsets": "Subsets",
+    "supersets": "Supersets",
+    "complement": "Complement"
+  },
+  "random": {
+    "title": "Random Generator",
+    "cardinality": "Cardinality",
+    "filters": "Filters",
+    "symmetricOnly": "Symmetric sets only",
+    "generate": "Generate Random",
+    "noResults": "No sets match the criteria"
+  },
+  "history": {
+    "title": "History",
+    "empty": "No history yet"
+  },
+  "twelveTone": {
+    "clickNotes": "Click notes in order",
+    "orTypeText": "or type 12 notes",
+    "textPlaceholder": "e.g. C C# D D# E F F# G G# A A# B",
+    "progress": "{{current}} / 12 notes",
+    "primeRow": "Prime Row P0",
+    "matrix": "Matrix",
+    "export": "Export",
+    "exportPNG": "Export as PNG",
+    "saveJSON": "Save as JSON",
+    "validation": {
+      "empty": "Enter a prime row to generate the matrix"
+    }
+  }
+}

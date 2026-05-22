@@ -1,0 +1,93 @@
+{
+  "app": {
+    "title": "作曲工具",
+    "subtitle": "作曲辅助工具集成"
+  },
+  "sidebar": {
+    "tools": "工具目录",
+    "collapse": "收起侧边栏",
+    "expand": "展开侧边栏"
+  },
+  "tool": {
+    "pitchClassSet": {
+      "name": "音级集合计算器",
+      "description": "计算音级集合的标准序、原型、音程向量、福特号，支持倒影/逆行/逆行倒影等变体操作"
+    },
+    "twelveTone": {
+      "name": "十二音矩阵",
+      "description": "输入十二音序列原型（P0），生成完整的12x12十二音矩阵，含P/R/I/RI标记"
+    }
+  },
+  "common": {
+    "clear": "清除",
+    "undo": "撤销",
+    "generate": "生成",
+    "apply": "应用",
+    "copy": "复制",
+    "ordered": "有序",
+    "unordered": "无序",
+    "notes": "音符",
+    "numbers": "数字"
+  },
+  "noteInput": {
+    "clickButtons": "点击音符按钮",
+    "orTypeText": "或输入文本",
+    "textPlaceholder": "例如：C E G 或 0 4 7",
+    "orderedToggle": "有序音列"
+  },
+  "transformation": {
+    "title": "变体操作",
+    "type": "变体类型",
+    "nValue": "n 值",
+    "Tn": "移调 Tn",
+    "In": "倒影 In",
+    "R": "逆行 R",
+    "RI": "逆行倒影 RI",
+    "result": "变体结果"
+  },
+  "classification": {
+    "title": "集合分类",
+    "normalForm": "标准序",
+    "primeForm": "原型",
+    "intervalVector": "音程向量",
+    "forteNumber": "福特号",
+    "chroma": "音级内涵"
+  },
+  "properties": {
+    "title": "集合属性",
+    "cardinality": "基数",
+    "symmetry": "对称性",
+    "tSymmetric": "移调对称",
+    "iSymmetric": "倒影对称",
+    "notSymmetric": "无对称性",
+    "subsets": "子集",
+    "supersets": "母集",
+    "complement": "补集"
+  },
+  "random": {
+    "title": "随机生成",
+    "cardinality": "音数",
+    "filters": "筛选条件",
+    "symmetricOnly": "仅对称集合",
+    "generate": "随机生成",
+    "noResults": "没有符合条件的结果"
+  },
+  "history": {
+    "title": "历史记录",
+    "empty": "暂无历史记录"
+  },
+  "twelveTone": {
+    "clickNotes": "按顺序点击音符",
+    "orTypeText": "或输入12个音符",
+    "textPlaceholder": "例如：C C# D D# E F F# G G# A A# B",
+    "progress": "{{current}} / 12 个音符",
+    "primeRow": "原型序列 P0",
+    "matrix": "矩阵",
+    "export": "导出",
+    "exportPNG": "导出为 PNG",
+    "saveJSON": "保存为 JSON",
+    "validation": {
+      "empty": "输入原型序列以生成矩阵"
+    }
+  }
+}
